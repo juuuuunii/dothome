@@ -9,25 +9,25 @@
 </head>
 <body>
 	<header class="w3-container w3-teal">
-		<h2>테이블 만들기</h2>
+		<h2>이거슨 테이블 만들기</h2>
 		<h5>생성할 테이블의 행과 열을 입력해 주시지요.</h5>
 	</header>
 	<section>
 		<form name="table_form" action="table_res.php" method="get">
-			<table class="w3-table w3-table-all">
+			<table class="w3-table w3-bordered w3-hoverable">
 				<tr>
-					<td style="width:20%;">행 갯수</td>
+					<td style="width:20%;">행 갯수랍니다.</td>
 					<td>
-						<select class="w3-select" name="row">
+						<select class="w3-select w3-border" name="row">
 							<? for($i=1; $i<=10; $i++) { ?>
 								<option value="<?=$i?>"><?=$i?></option>
 							<? } ?>
 						</select>
-					</td>
+					</td> 
 				</tr>
 
 				<tr>
-					<td style="width:20%;">열 갯수</td>
+					<td style="width:20%;">열 갯수이지요.</td>
 					<td>
 						<select class="w3-select" name="row">
 							<? for($i=1; $i<=10; $i++) { 
@@ -37,8 +37,8 @@
 					</td>
 				</tr>
 			</table>
-			<div>
-				<button type="submit" class="w3-button w3-teal">확인</button>
+			<div class="w3-center w3-margin">
+				<button type="submit" class="w3-button w3-teal ">확인</button>
 			</div>
 		</form>
 	</section>
