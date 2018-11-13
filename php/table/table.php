@@ -29,7 +29,7 @@
 				<tr>
 					<td style="width:20%;">열 갯수이지요.</td>
 					<td>
-						<select class="w3-select" name="row">
+						<select class="w3-select" name="col">
 							<? for($i=1; $i<=10; $i++) { 
 								echo '<option value="'.$i.'">'.$i.'</option>';
 							} ?>
